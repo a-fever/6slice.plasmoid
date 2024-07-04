@@ -3,7 +3,7 @@ import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.10
 import org.kde.kquickcontrols 2.0
 
-Item {
+PlasmoidItem {
 
     property alias cfg_enableScrollTo: enableScrollTo.checked
     property alias cfg_scrollToX: scrollToX.text
