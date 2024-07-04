@@ -21,16 +21,16 @@ import QtQuick 2.12
 import QtWebEngine 1.8
 import QtQuick.Layouts 1.10
 import QtQuick.Controls 2.12
-import org.kde.plasma.plasmoid 2.0
-import org.kde.plasma.components 2.0 as PlasmaComponents
-import org.kde.plasma.core 2.0 as PlasmaCore
+import org.kde.plasma.plasmoid
+import org.kde.plasma.components as PlasmaComponents
+import org.kde.ksvg as KSVG
 import QtQml 2.12
 
 import "../code/utils.js" as ConfigUtils
 
 
 
-Item {
+PlasmoidItem {
     id: main
 
     property string websliceUrl: plasmoid.configuration.websliceUrl
@@ -78,11 +78,11 @@ Item {
 
     signal handleSettingsUpdated();
 
-    Plasmoid.preferredRepresentation: (displaySiteBehaviour)? Plasmoid.fullRepresentation : Plasmoid.compactRepresentation
+    preferredRepresentation: (displaySiteBehaviour)? fullRepresentation : compactRepresentation
 
-    Plasmoid.fullRepresentation: webview
+    fullRepresentation: webview
     
-    Plasmoid.icon: webPopupIcon
+    icon: webPopupIcon
     
     onUrlsModelChanged:{ loadURLs(); }
 
@@ -287,7 +287,7 @@ Item {
         /**
          * Get status of Ctrl key
          */
-         PlasmaCore.DataSource {
+         Plasma5Support.DataSource {
             id: dataSource
             engine: "keystate"
             connectedSources: ["Ctrl"]
@@ -451,9 +451,9 @@ Item {
             visible: false
             running: false
             
-            contentItem: PlasmaCore.SvgItem {
+            contentItem: KSvg.SvgItem {
                 id: indicatorItem
-                svg: PlasmaCore.Svg {
+                svg: KSvg.Svg {
                     imagePath: "widgets/busywidget"
                 }
                 
