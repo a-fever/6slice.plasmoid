@@ -1,9 +1,9 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.10
-import org.kde.kquickcontrols 2.0
+import org.kde.kquickcontrols
 
-Item {
+PlasmoidItem {
 
     property alias cfg_websliceUrl: websliceUrl.text
     property alias cfg_zoomFactor: zoomFactor.value
