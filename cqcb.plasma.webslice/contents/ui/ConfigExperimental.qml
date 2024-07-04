@@ -1,9 +1,9 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.10
-import org.kde.kquickcontrols 2.0
+import org.kde.kquickcontrols
 
-Item {
+PlasmoidItem {
 
     property alias cfg_keysSeqBack: keysSeqBack.keySequence
     property alias cfg_keysSeqForward: keysSeqForward.keySequence
