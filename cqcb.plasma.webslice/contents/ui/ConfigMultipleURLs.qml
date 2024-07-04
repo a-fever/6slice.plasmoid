@@ -3,7 +3,7 @@ import QtQuick.Controls 1.4
 import QtQuick.Layouts 1.10
 import "../code/utils.js" as ConfigUtils
 
-Item {
+PlasmoidItem {
     id: rootItem
 
     property string cfg_urlsModel
