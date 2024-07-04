@@ -1,0 +1,23 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "af3ver@gmail.com",
+                "Name": "afever"
+            }
+        ],
+        "Category": "Online Services",
+        "Description": "Webslice Updated to Plasma 6. Add a webpage straight onto your desktop.",
+        "Icon": "internet-web-browser",
+        "Id": "cqcb.plasma.webslice6",
+        "License": "GPL3",
+        "Name": "WebSlice6",
+        "KPackageStructure": "Plasma/Applet",
+        "Version": "1",
+        "Website": "https://github.com/a-fever/webslice-plasmoid"
+    },
+    "X-KDE-ParentApp": "",
+    "X-Plasma-RemoteLocation": "",
+    "X-Plasma-StandAloneApp": "true",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
